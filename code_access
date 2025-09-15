@@ -289,6 +289,10 @@
     <classAccesses>
         <apexClass>CHANNEL_ORDERS__COAPartnerOrder</apexClass>
         <enabled>true</enabled>
+<classAccesses>
+    <apexClass>CHANNEL_ORDERS__TestOrderModalContainerController</apexClass>
+    <enabled>true</enabled>
+</classAccesses>
     </classAccesses>
     <classAccesses>
         <apexClass>CHANNEL_ORDERS__COAPartnerOrderResponse</apexClass>
