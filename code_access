@@ -290,7 +290,7 @@
         <apexClass>CHANNEL_ORDERS__COAPartnerOrder</apexClass>
         <enabled>true</enabled>
 <classAccesses>
-    <apexClass>CHANNEL_ORDERS__COA_TestOrderDetailsWizard</apexClass>
+    <apexClass>CHANNEL_ORDERS__COA_TestOrderDetailsWizardStepService</apexClass>
     <enabled>true</enabled>
 </classAccesses>
     <classAccesses>
