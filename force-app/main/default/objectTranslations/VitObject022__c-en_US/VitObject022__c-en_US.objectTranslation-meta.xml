@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VitObject022__c-en_US</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>VitObject022</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>VitObject022s</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

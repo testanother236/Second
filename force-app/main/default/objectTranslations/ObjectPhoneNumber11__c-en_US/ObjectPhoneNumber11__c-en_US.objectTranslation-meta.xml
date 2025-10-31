@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObjectPhoneNumber11__c-en_US</fullName>
+    <caseValues>
+        <plural>false</plural>
+        <value>ObjectPhoneNumber11</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ObjectPhoneNumber11</value>
+    </caseValues>
+    <layouts>
+        <layout>TestAs-Ӕгас цӕут</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TestChi-你好</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TestEng</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TestJap-こんにちは</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>TestJapテスト</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- RecordTypePhoneNumber11 --></label>
+        <name>RecordTypePhoneNumber11</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecordTypePhoneNumber1111 --></label>
+        <name>RecordTypePhoneNumber1111</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecordTypePhoneNumber11Arab --></label>
+        <name>RecordTypePhoneNumber11Arab</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecordTypePhoneNumber11Aset --></label>
+        <name>RecordTypePhoneNumber11Aset</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RecordTypePhoneNumber11Chi --></label>
+        <name>RecordTypePhoneNumber11Chi</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
