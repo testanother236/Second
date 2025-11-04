@@ -1,0 +1,20 @@
+public with sharing class Revvy_IntegrationService {
+    private static final String ENDPOINT = 'callout:Revvy_API';
+
+    public static String sendPricingData(Map<String, Object> payload) {
+        HttpRequest req = new HttpRequest();
+        req.setEndpoint(ENDPOINT);
+        req.setMethod('POST');
+        req.setHeader('Content-Type', 'application/json');
+        req.setBody(JSON.serialize(payload));
+
+        Http http = new Http();
+        HttpResponse res = http.send(req);
+
+        if (res.getStatusCode() >= 200 && res.getStatusCode() < 300) {
+            return res.getBody();
+        } else {
+            throw new CalloutException('Failed to send pricing data: ' + res.getStatus());
+        }
+    }
+}
