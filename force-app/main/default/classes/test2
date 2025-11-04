@@ -1,0 +1,15 @@
+public with sharing class Revvy_LeadConverter {
+    public static void convertLeads(List<Id> leadIds) {
+        if (leadIds.isEmpty()) return;
+
+        List<Database.LeadConvert> conversions = new List<Database.LeadConvert>();
+        for (Id leadId : leadIds) {
+            Database.LeadConvert lc = new Database.LeadConvert();
+            lc.setLeadId(leadId);
+            lc.setDoNotCreateOpportunity(true);
+            conversions.add(lc);
+        }
+        List<Database.LeadConvertResult> results = Database.convertLead(conversions, false);
+        System.debug('Converted leads: ' + results.size());
+    }
+}
