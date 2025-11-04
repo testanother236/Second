@@ -1,0 +1,23 @@
+public with sharing class Revvy_OpportunityTriggerHandler {
+    public static void handleBeforeInsert(List<Opportunity> newOpps) {
+        for (Opportunity opp : newOpps) {
+            if (String.isBlank(opp.StageName)) {
+                opp.StageName = 'Prospecting';
+            }
+            if (opp.CloseDate == null) {
+                opp.CloseDate = System.today().addDays(30);
+            }
+        }
+    }
+
+    public static void handleAfterUpdate(Map<Id, Opportunity> oldMap, Map<Id, Opportunity> newMap) {
+        for (Id oppId : newMap.keySet()) {
+            Opportunity oldOpp = oldMap.get(oppId);
+            Opportunity newOpp = newMap.get(oppId);
+
+            if (oldOpp.StageName != newOpp.StageName) {
+                System.debug('Opportunity ' + newOpp.Id + ' stage changed from ' + oldOpp.StageName + ' to ' + newOpp.StageName);
+            }
+        }
+    }
+}
