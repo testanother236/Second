@@ -1,0 +1,18 @@
+public with sharing class Revvy_AccountService {
+    public static List<Account> getActiveAccounts() {
+        return [SELECT Id, Name, Industry, BillingCity
+                FROM Account
+                WHERE IsActive__c = true
+                LIMIT 200];
+    }
+
+    public static void deactivateAccounts(Set<Id> accountIds) {
+        if (accountIds.isEmpty()) return;
+
+        List<Account> accToUpdate = [SELECT Id, IsActive__c FROM Account WHERE Id IN :accountIds];
+        for (Account acc : accToUpdate) {
+            acc.IsActive__c = false;
+        }
+        update accToUpdate;
+    }
+}
