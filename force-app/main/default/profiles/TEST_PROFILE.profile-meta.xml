@@ -18,7 +18,7 @@
     <applicationVisibilities>
         <application>standard__Audience360</application>
         <default>false</default>
-        <visible>true</visible>
+        <visible>false</visible>
     </applicationVisibilities>
     <applicationVisibilities>
         <application>standard__Chatter</application>
