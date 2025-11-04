@@ -1,0 +1,119 @@
+public with sharing class VeryLargeApexClass {
+    // Starting large class with repetitive and dummy methods
+
+    // Method to perform multiple repeated tasks
+    public void performMassiveTasks() {
+        for (Integer i = 0; i < 100; i++) {
+            performSingleTask(i);
+        }
+    }
+
+    private void performSingleTask(Integer index) {
+        System.debug('Performing task number: ' + index);
+        Integer a = index * 3;
+        Integer b = index + 7;
+        Integer c = a - b;
+        System.debug('Result of calculation: ' + c);
+    }
+
+    // Main process method
+    public void runLargeProcess() {
+        System.debug('Starting large process...');
+        for (Integer i = 0; i < 60; i++) {
+            performMassiveTasks();
+        }
+        System.debug('Finished large process.');
+    }
+
+    // Multiple nested loops and methods
+    public void executeNestedLoops() {
+        for (Integer i = 0; i < 150; i++) {
+            processOuterLoop(i);
+        }
+    }
+
+    private void processOuterLoop(Integer outerIndex) {
+        System.debug('Outer loop index: ' + outerIndex);
+        for (Integer j = 0; j < 10; j++) {
+            processInnerLoop(outerIndex, j);
+        }
+    }
+
+    private void processInnerLoop(Integer outerIndex, Integer innerIndex) {
+        System.debug('Processing outer: ' + outerIndex + ', inner: ' + innerIndex);
+        Integer combined = outerIndex * innerIndex + innerIndex;
+        System.debug('Combined result: ' + combined);
+    }
+
+    // Repeating blocks to increase length
+    public void performRepeatedBlocks() {
+        for (Integer i = 0; i < 25; i++) {
+            performBlock(i);
+        }
+    }
+
+    private void performBlock(Integer blockNumber) {
+        System.debug('Performing block: ' + blockNumber);
+        for (Integer j = 0; j < 8; j++) {
+            nestedBlockTask(blockNumber, j);
+        }
+    }
+
+    private void nestedBlockTask(Integer blockNumber, Integer nestedNumber) {
+        System.debug('Block: ' + blockNumber + ', Nested: ' + nestedNumber);
+        Integer dummyCalc = blockNumber * nestedNumber + nestedNumber;
+        System.debug('Dummy calculation: ' + dummyCalc);
+    }
+
+    // Additional repetitive methods
+    public void processMultipleDatasets() {
+        List<String> datasets = new List<String>{'X', 'Y', 'Z', 'W', 'V'};
+        for (String dataSet : datasets) {
+            handleDataSet(dataSet);
+        }
+    }
+
+    private void handleDataSet(String dataSet) {
+        System.debug('Handling dataset: ' + dataSet);
+        Integer length = dataSet.length();
+        System.debug('Dataset length: ' + length);
+    }
+
+    // More repetitive methods for length
+    public void performOperations() {
+        for (Integer i = 0; i < 120; i++) {
+            executeOperation(i);
+        }
+    }
+
+    private void executeOperation(Integer opIndex) {
+        System.debug('Executing operation: ' + opIndex);
+        String message = 'Operation: ' + opIndex;
+        System.debug(message);
+    }
+
+    // Additional batch processing
+    public void runBatchProcessing() {
+        for (Integer i = 0; i < 40; i++) {
+            processBatch(i);
+        }
+    }
+
+    private void processBatch(Integer batchNumber) {
+        System.debug('Processing batch: ' + batchNumber);
+        for (Integer j = 0; j < 7; j++) {
+            processInnerBatch(batchNumber, j);
+        }
+    }
+
+    private void processInnerBatch(Integer batchNumber, Integer innerNumber) {
+        System.debug('Batch: ' + batchNumber + ', Inner: ' + innerNumber);
+        Integer result = batchNumber + innerNumber;
+        System.debug('Batch result: ' + result);
+    }
+
+    // Placeholder for more repeated methods
+    // (In actual use, these blocks would be duplicated or generated to reach approximately 5000 lines)
+
+    // End of class
+}
