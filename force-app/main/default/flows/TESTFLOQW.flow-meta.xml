@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>64.0</apiVersion>
-    <description>test</description>
+    <description>Complex test flow with multiple Salesforce elements.</description>
     <environments>Default</environments>
-    <interviewLabel>TESTFLOQW {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>TESTFLOQW</label>
+    <interviewLabel>Complex_Auto_Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Complex_Auto_Flow</label>
+
+    <!-- Metadata context -->
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -17,34 +19,20 @@
             <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
         </value>
     </processMetadataValues>
-    <processMetadataValues>
-        <name>OriginBuilderType</name>
-        <value>
-            <stringValue>LightningFlowBuilder</stringValue>
-        </value>
-    </processMetadataValues>
+
+    <!-- Flow type -->
     <processType>AutoLaunchedFlow</processType>
-    <recordUpdates>
-        <description>test</description>
-        <name>Testtest</name>
-        <label>Test</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <inputAssignments>
-            <field>Birthdate</field>
-            <value>
-                <dateValue>2003-09-03</dateValue>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record.Contacts</inputReference>
-    </recordUpdates>
+
+    <!-- START: Trigger -->
     <start>
-        <locationX>0</locationX>
+        <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Testtest</targetReference>
+            <targetReference>Check_Account_Type</targetReference>
         </connector>
-        <filterLogic>or</filterLogic>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
         <filters>
             <field>IsDeleted</field>
             <operator>EqualTo</operator>
@@ -52,16 +40,154 @@
                 <booleanValue>false</booleanValue>
             </value>
         </filters>
+    </start>
+
+    <!-- 1️⃣ Decision: Check Account Type -->
+    <decisions>
+        <name>Check_Account_Type</name>
+        <label>Check Account Type</label>
+        <locationX>200</locationX>
+        <locationY>0</locationY>
+        <defaultConnectorLabel>Not a Partner</defaultConnectorLabel>
+        <rules>
+            <name>Is_Installation_Partner</name>
+            <label>Is Installation Partner?</label>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Installation Partner</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Contacts</targetReference>
+            </connector>
+        </rules>
+        <defaultConnector>
+            <targetReference>Create_FollowUp_Task</targetReference>
+        </defaultConnector>
+    </decisions>
+
+    <!-- 2️⃣ Get Contacts related to Account -->
+    <recordLookups>
+        <name>Get_Contacts</name>
+        <label>Get Related Contacts</label>
+        <locationX>400</locationX>
+        <locationY>-100</locationY>
+        <object>Contact</object>
+        <filterLogic>and</filterLogic>
         <filters>
-            <field>Type</field>
+            <field>AccountId</field>
             <operator>EqualTo</operator>
             <value>
-                <stringValue>Installation Partner</stringValue>
+                <elementReference>$Record.Id</elementReference>
             </value>
         </filters>
-        <object>Account</object>
-        <recordTriggerType>Create</recordTriggerType>
-        <triggerType>RecordAfterSave</triggerType>
-    </start>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <connector>
+            <targetReference>Loop_Contacts</targetReference>
+        </connector>
+    </recordLookups>
+
+    <!-- 3️⃣ Loop through Contacts -->
+    <loops>
+        <name>Loop_Contacts</name>
+        <label>Loop Through Contacts</label>
+        <locationX>600</locationX>
+        <locationY>-100</locationY>
+        <collectionReference>Get_Contacts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Birthdate</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_Contacts</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+
+    <!-- 4️⃣ Assignment: Modify Contact data -->
+    <assignments>
+        <name>Assign_Birthdate</name>
+        <label>Set Contact Birthdate</label>
+        <locationX>800</locationX>
+        <locationY>-100</locationY>
+        <assignmentItems>
+            <assignToReference>Loop_Contacts.Birthdate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <dateValue>2000-01-01</dateValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_To_Update_Collection</targetReference>
+        </connector>
+    </assignments>
+
+    <!-- 5️⃣ Add to collection for bulk update -->
+    <assignments>
+        <name>Add_To_Update_Collection</name>
+        <label>Add to Update Collection</label>
+        <locationX>1000</locationX>
+        <locationY>-100</locationY>
+        <assignmentItems>
+            <assignToReference>Contacts_To_Update</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_Contacts</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Contacts</targetReference>
+        </connector>
+    </assignments>
+
+    <!-- 6️⃣ Update Contacts -->
+    <recordUpdates>
+        <name>Update_Contacts</name>
+        <label>Update Contacts</label>
+        <locationX>1200</locationX>
+        <locationY>-100</locationY>
+        <inputReference>Contacts_To_Update</inputReference>
+        <connector>
+            <targetReference>Create_FollowUp_Task</targetReference>
+        </connector>
+    </recordUpdates>
+
+    <!-- 7️⃣ Create Task -->
+    <recordCreates>
+        <name>Create_FollowUp_Task</name>
+        <label>Create Follow-up Task</label>
+        <locationX>400</locationX>
+        <locationY>200</locationY>
+        <object>Task</object>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>New Account Created - Review</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Not Started</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+    </recordCreates>
+
+    <!-- Variables -->
+    <variables>
+        <name>Contacts_To_Update</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <objectType>Contact</objectType>
+    </variables>
+
     <status>Active</status>
 </Flow>
