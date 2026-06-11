@@ -85,14 +85,6 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>standard__LightningBolt</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
-        <name>standard__Audience360</name>
-        <type>CustomApplication</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>standard__Approvals</name>
         <type>CustomApplication</type>
     </appMenuItems>
@@ -101,7 +93,15 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
+        <name>standard__LightningBolt</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
         <name>standard__LightningScheduler</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>standard__Shield</name>
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
@@ -109,7 +109,7 @@
         <type>CustomApplication</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Revvy_DevOps</name>
-        <type>ConnectedApp</type>
+        <name>standard__Integration</name>
+        <type>CustomApplication</type>
     </appMenuItems>
 </AppMenu>
