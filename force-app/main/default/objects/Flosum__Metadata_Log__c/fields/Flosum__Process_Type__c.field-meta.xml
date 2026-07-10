@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Flosum__Process_Type__c</fullName>
     <deprecated>false</deprecated>
     <description>Determine the process for which the log has been created</description>
-    <fullName>Flosum__Process_Type__c</fullName>
     <label>Process Type</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
@@ -12,93 +12,88 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
+                <fullName>Patch</fullName>
                 <color>#0B6FCE</color>
                 <default>false</default>
-                <fullName>Patch</fullName>
                 <label>Patch</label>
             </value>
             <value>
+                <fullName>Deployment</fullName>
                 <color>#78C953</color>
                 <default>false</default>
-                <fullName>Deployment</fullName>
                 <label>Deployment</label>
             </value>
             <value>
+                <fullName>Validate</fullName>
                 <color>#E27001</color>
                 <default>false</default>
-                <fullName>Validate</fullName>
                 <label>Validate</label>
             </value>
             <value>
+                <fullName>Retrieve</fullName>
                 <color>#A845DC</color>
                 <default>false</default>
-                <fullName>Retrieve</fullName>
                 <label>Retrieve</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Rollback (Validate)</fullName>
+                <default>false</default>
                 <label>Rollback (Validate)</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Rollback (Deployment)</fullName>
+                <default>false</default>
                 <label>Rollback (Deployment)</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Schedule Deployment</fullName>
+                <default>false</default>
                 <label>Schedule Deployment</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Test Execution</fullName>
+                <default>false</default>
                 <label>Test Execution</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Test Execution Job</fullName>
+                <default>false</default>
                 <label>Test Execution Job</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Clean Org Data</fullName>
+                <default>false</default>
                 <label>Clean Org Data</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Install Vlocity Initial</fullName>
+                <default>false</default>
                 <label>Install Vlocity Initial</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Pack Retry (Heroku)</fullName>
+                <default>false</default>
                 <label>Pack Retry (Heroku)</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Tracking Organization - Retrieve</fullName>
+                <default>false</default>
                 <label>Tracking Organization - Retrieve</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>AccelQ</fullName>
+                <default>false</default>
                 <label>AccelQ</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Veeva Rollback (Deployment)</fullName>
+                <default>false</default>
                 <label>Veeva Rollback (Deployment)</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Veeva Deployment</fullName>
-                <label>Veeva Deployment</label>
-            </value>
-            <value>
                 <default>false</default>
-                <fullName>Pause</fullName>
-                <label>Pause</label>
+                <label>Veeva Deployment</label>
             </value>
         </valueSetDefinition>
     </valueSet>

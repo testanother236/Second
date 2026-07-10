@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <deprecated>false</deprecated>
     <fullName>Flosum__Status__c</fullName>
+    <deprecated>false</deprecated>
     <label>Status</label>
     <required>false</required>
     <trackHistory>false</trackHistory>
@@ -11,33 +11,33 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <default>false</default>
                 <fullName>In Progress</fullName>
+                <default>false</default>
                 <label>In Progress</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Exception</fullName>
+                <default>false</default>
                 <label>Exception</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Completed</fullName>
+                <default>false</default>
                 <label>Completed</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Partial Completed</fullName>
+                <default>false</default>
                 <label>Partial Completed</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Not Started</fullName>
+                <default>false</default>
                 <label>Not Started</label>
             </value>
             <value>
-                <default>false</default>
                 <fullName>Did Not Run</fullName>
+                <default>false</default>
                 <label>Did Not Run</label>
             </value>
         </valueSetDefinition>
