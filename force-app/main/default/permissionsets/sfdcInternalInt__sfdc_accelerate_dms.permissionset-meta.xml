@@ -3,7 +3,7 @@
     <description>Data Mask and Seed permissions.</description>
     <fieldPermissions>
         <editable>true</editable>
-        <field>AI_Agent_Conversation_Entry__c.Entry_Time__c</field>
+        <field>AI_Agent_Conversation_Entry__c.Entry_Time__cTEST</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
