@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <assignments>
+        <assignmentItems>
+            <assignToReference>LSDemoAppointmentsUpdated</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LS_SA</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Through_Service_Appointments</targetReference>
+        </connector>
+        <label>Add Updated SA to Collection</label>
+        <locationX>585</locationX>
+        <locationY>661</locationY>
+        <name>Add_Updated_SA_to_Collection</name>
+    </assignments>
+    <assignments>
+        <assignmentItems>
+            <assignToReference>LS_SA.SchedStartTime</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NewSchedStartTime</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>LS_SA.SchedEndTime</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NewSchedEndTime</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>LS_SA.EarliestStartTime</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NewEarlyStart</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>LS_SA.DueDate</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>NewDueDate</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_Updated_SA_to_Collection</targetReference>
+        </connector>
+        <label>Assign New Dates</label>
+        <locationX>896</locationX>
+        <locationY>658</locationY>
+        <name>Assign_New_Dates</name>
+    </assignments>
+    <decisions>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <label>Demo records Found?</label>
+        <locationX>373</locationX>
+        <locationY>160</locationY>
+        <name>Demo_records_Found</name>
+        <rules>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LSEarliestDateFound</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Demo_Service_Appointments</targetReference>
+            </connector>
+            <label>Yes</label>
+            <name>DRFYes</name>
+        </rules>
+        <rules>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>LSEarliestDateFound</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Demo_Records_were_not_found</targetReference>
+            </connector>
+            <label>No</label>
+            <name>No</name>
+        </rules>
+    </decisions>
+    <formulas>
+        <dataType>Number</dataType>
+        <expression>If(not(isblank({!New_Demo_Date})), {!New_Demo_Date} - datevalue({!LSEarliestDateFound}), {!Hours_Offset} / 24)</expression>
+        <name>DateDifference</name>
+        <scale>6</scale>
+    </formulas>
+    <formulas>
+        <dataType>DateTime</dataType>
+        <expression>{!LS_SA.DueDate} + {!DateDifference}</expression>
+        <name>NewDueDate</name>
+    </formulas>
+    <formulas>
+        <dataType>DateTime</dataType>
+        <expression>{!LS_SA.EarliestStartTime} + {!DateDifference}</expression>
+        <name>NewEarlyStart</name>
+    </formulas>
+    <formulas>
+        <dataType>DateTime</dataType>
+        <expression>{!LS_SA.SchedEndTime} + {!DateDifference}</expression>
+        <name>NewSchedEndTime</name>
+    </formulas>
+    <formulas>
+        <dataType>DateTime</dataType>
+        <expression>{!LS_SA.SchedStartTime} + {!DateDifference}</expression>
+        <name>NewSchedStartTime</name>
+    </formulas>
+    <formulas>
+        <dataType>String</dataType>
+        <expression>If(isblank({!Hours_Offset}), &quot;The new demo date is &quot; &amp; text( {!New_Demo_Date}), &quot;The appointments have been moved by &quot; &amp; text( {!Hours_Offset}) &amp; &quot; hours&quot;)</expression>
+        <name>SummaryMessage</name>
+    </formulas>
+    <interviewLabel>LS Demo Reset {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>LS Demo Reset</label>
+    <loops>
+        <assignNextValueToReference>LS_SA</assignNextValueToReference>
+        <collectionReference>LSDemoServiceAppointments</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <label>Loop Through Service Appointments</label>
+        <locationX>657</locationX>
+        <locationY>307</locationY>
+        <name>Loop_Through_Service_Appointments</name>
+        <nextValueConnector>
+            <targetReference>Assign_New_Dates</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Update_SAs</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Select_Demo_Date</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LSDemoTools_Master_Data__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SchedStartTime</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <label>Get Demo Service Appointments</label>
+        <locationX>356</locationX>
+        <locationY>318</locationY>
+        <name>Get_Demo_Service_Appointments</name>
+        <object>ServiceAppointment</object>
+        <outputReference>LSDemoServiceAppointments</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>SchedEndTime</queriedFields>
+        <queriedFields>SchedStartTime</queriedFields>
+        <queriedFields>EarliestStartTime</queriedFields>
+        <queriedFields>DueDate</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Demo_records_Found</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LSDemoTools_Master_Data__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>SchedStartTime</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <label>Get the Earliest Demo SA</label>
+        <locationX>227</locationX>
+        <locationY>129</locationY>
+        <name>Get_the_Earliest_Demo_SA</name>
+        <object>ServiceAppointment</object>
+        <outputAssignments>
+            <assignToReference>LSEarliestDateFound</assignToReference>
+            <field>SchedStartTime</field>
+        </outputAssignments>
+        <sortField>SchedStartTime</sortField>
+        <sortOrder>Asc</sortOrder>
+    </recordLookups>
+    <recordUpdates>
+        <connector>
+            <targetReference>Demo_Date_Reset_Complete</targetReference>
+        </connector>
+        <inputReference>LSDemoAppointmentsUpdated</inputReference>
+        <label>Update SAs</label>
+        <locationX>963</locationX>
+        <locationY>314</locationY>
+        <name>Update_SAs</name>
+    </recordUpdates>
+    <screens>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <fieldText>Demo Date Mover Complete. {!SummaryMessage}.</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <name>NewDemoDate</name>
+        </fields>
+        <fields>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;text-decoration: underline;&quot;&gt;&lt;strong&gt;Important Next Steps&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;&lt;strong&gt;Moving locations&lt;/strong&gt;: If desired, change the addresses of the service territories and the timezones to match your requirements. For example, move territories from a California based address to a London one and change the timezones from Pacific time to Greenwich Mean Time (Europe/London). This can be found on the service territory record.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <name>OtherNextSeps</name>
+        </fields>
+        <label>Demo Date Reset Complete</label>
+        <locationX>1387</locationX>
+        <locationY>314</locationY>
+        <name>Demo_Date_Reset_Complete</name>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <fieldText>Demo records were not found in your org.  Please create at least one Service Appointment where the LS Demo Master flag is set to True.</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <name>drwnt</name>
+        </fields>
+        <label>Demo Records were not found</label>
+        <locationX>491</locationX>
+        <locationY>65</locationY>
+        <name>Demo_Records_were_not_found</name>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Loop_Through_Service_Appointments</targetReference>
+        </connector>
+        <fields>
+            <fieldText>Current Demo Date - {!LSEarliestDateFound}</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <name>Display_Current_Demo_Date</name>
+        </fields>
+        <fields>
+            <dataType>Date</dataType>
+            <fieldText>New Demo Date (Must be a Monday)</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>false</isRequired>
+            <name>New_Demo_Date</name>
+            <validationRule>
+                <errorMessage>Please enter a new demo date or an hours offset, but not both.</errorMessage>
+                <formulaExpression>(isblank({!Hours_Offset} )  &amp;&amp; not(isblank({!New_Demo_Date}))) || (not(isblank({!Hours_Offset}) )  &amp;&amp; isblank({!New_Demo_Date}))</formulaExpression>
+            </validationRule>
+        </fields>
+        <fields>
+            <fieldText>Alternatively, enter the number of hours, positive or negative, that you would like to shift the appointments by.  Use this option if you are located in another time zone other than Pacific Time and want to demo in that time zone.  Run this option if your appointments appear outside the normal work hours of your employee.</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <name>TimeZoneShiftingInfo</name>
+        </fields>
+        <fields>
+            <dataType>Number</dataType>
+            <fieldText>Hours Offset</fieldText>
+            <fieldType>InputField</fieldType>
+            <helpText>Enter the number of hours, positive or negative, that you would like to shift the appointments by.  Use this option if you are located in another time zone other than Pacific Time and want to demo in that time zone.</helpText>
+            <isRequired>false</isRequired>
+            <name>Hours_Offset</name>
+            <scale>0</scale>
+            <validationRule>
+                <errorMessage>Enter a number between -23 and 23.</errorMessage>
+                <formulaExpression>isblank({!Hours_Offset} )  || ({!Hours_Offset} &gt;= -23 &amp;&amp; {!Hours_Offset} &lt;= 23)</formulaExpression>
+            </validationRule>
+        </fields>
+        <label>Select Demo Date</label>
+        <locationX>486</locationX>
+        <locationY>319</locationY>
+        <name>Select_Demo_Date</name>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <startElementReference>Get_the_Earliest_Demo_SA</startElementReference>
+    <status>Active</status>
+    <variables>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <name>LS_SA</name>
+        <objectType>ServiceAppointment</objectType>
+    </variables>
+    <variables>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <name>LSDemoAppointmentsUpdated</name>
+        <objectType>ServiceAppointment</objectType>
+    </variables>
+    <variables>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <name>LSDemoServiceAppointments</name>
+        <objectType>ServiceAppointment</objectType>
+    </variables>
+    <variables>
+        <dataType>DateTime</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <name>LSEarliestDateFound</name>
+    </variables>
+</Flow>
