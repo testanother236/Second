@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>equals</operation>
+            <value>AAAAAA</value>
+        </criteriaItems>
+        <fullName>Test_Criteria</fullName>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+        <label>Test Criteria</label>
+        <sharedTo>
+            <group>Admins</group>
+        </sharedTo>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <fullName>Test_Guest</fullName>
+        <label>Test Guest</label>
+        <sharedFrom>
+            <group>Custom_Dev</group>
+        </sharedFrom>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <fullName>Test_Owner</fullName>
+        <label>Test Owner</label>
+        <sharedFrom>
+            <group>Admins</group>
+        </sharedFrom>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </sharingOwnerRules>
+</SharingRules>
