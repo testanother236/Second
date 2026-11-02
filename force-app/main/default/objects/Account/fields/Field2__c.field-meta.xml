@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field2__c</fullName>
+    <label>Field2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ABC</fullName>
+                <default>false</default>
+                <label>ABC</label>
+            </value>
+            <value>
+                <fullName>ZXY</fullName>
+                <default>false</default>
+                <label>ZXY</label>
+            </value>
+            <value>
+                <fullName>XYZ</fullName>
+                <default>false</default>
+                <label>XYZ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
