@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <fullName>Test_One</fullName>
+    <label>Test One</label>
+    <picklistValues>
+        <picklist>Global_Option__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>GlobalOne</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>GlobalThree</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>GlobalTwo</fullName>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Option__c</picklist>
+        <values>
+            <default>false</default>
+            <fullName>One</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Three</fullName>
+        </values>
+        <values>
+            <default>false</default>
+            <fullName>Two</fullName>
+        </values>
+    </picklistValues>
+</RecordType>
