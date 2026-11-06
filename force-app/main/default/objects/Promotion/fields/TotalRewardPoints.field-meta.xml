@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalRewardPoints</fullName>
+    <inlineHelpText>Enter the total reward points. This field is required when Fulfillment Action is set to Credit Points.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

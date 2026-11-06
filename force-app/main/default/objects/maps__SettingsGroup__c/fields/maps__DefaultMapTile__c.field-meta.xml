@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>This is the default map tile to be used when the map is loaded</description>
+    <fullName>maps__DefaultMapTile__c</fullName>
+    <label>Default Map Tile</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>ESRI Imagery</fullName>
+                <label>ESRI Imagery</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>ESRI Street</fullName>
+                <label>ESRI Street</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>ESRI Topography</fullName>
+                <label>ESRI Topography</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Google Hybrid</fullName>
+                <label>Google Hybrid</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Google Road</fullName>
+                <label>Google Road</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Google Satellite</fullName>
+                <label>Google Satellite</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Google Terrain</fullName>
+                <label>Google Terrain</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

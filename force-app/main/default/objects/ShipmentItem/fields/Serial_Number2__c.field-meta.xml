@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <displayFormat>{0000}-{0000}</displayFormat>
+    <externalId>false</externalId>
+    <fullName>Serial_Number2__c</fullName>
+    <label>Serial Number</label>
+    <trackHistory>false</trackHistory>
+    <type>AutoNumber</type>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>Flosum__Action_Type__c</fullName>
+    <label>Action Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Branch Merge</fullName>
+                <label>Branch Merge</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Commit</fullName>
+                <label>Commit</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Demerge</fullName>
+                <label>Demerge</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Edit Component</fullName>
+                <label>Edit Component</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Impact Analysis Merge</fullName>
+                <label>Impact Analysis Merge</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>PreDeploy Fix</fullName>
+                <label>PreDeploy Fix</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Search &amp; Replace Text</fullName>
+                <label>Search &amp; Replace Text</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

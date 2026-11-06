@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This tells us if the data set is active or needs completed</description>
+    <fullName>maps__Active__c</fullName>
+    <label>Active</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

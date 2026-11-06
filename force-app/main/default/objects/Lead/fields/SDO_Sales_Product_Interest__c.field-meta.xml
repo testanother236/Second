@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>What: What products are they interested in.</description>
+    <fullName>SDO_Sales_Product_Interest__c</fullName>
+    <label>Product Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Compliance</fullName>
+                <label>Compliance</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Consulting</fullName>
+                <label>Consulting</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Products</fullName>
+                <label>Products</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Services</fullName>
+                <label>Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Support</fullName>
+                <label>Support</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

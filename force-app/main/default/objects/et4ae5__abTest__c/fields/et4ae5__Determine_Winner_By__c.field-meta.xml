@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>et4ae5__Determine_Winner_By__c</fullName>
+    <label>Determine Winner By</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Higher unique click-through rate (CTR)</fullName>
+                <label>Higher unique click-through rate (CTR)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Higher unique open rate</fullName>
+                <label>Higher unique open rate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attribute_3__c</fullName>
+    <label>Home Audio</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Home Theatre</fullName>
+                <label>Home Theatre</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Multi-Room Audio</fullName>
+                <label>Multi-Room Audio</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Speakers</fullName>
+                <label>Speakers</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

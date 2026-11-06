@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Article_Confidence__c</fullName>
+    <label>Article Confidence</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Archived</fullName>
+                <label>Archived</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Not Validated</fullName>
+                <label>Not Validated</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Validated</fullName>
+                <label>Validated</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Work in Progress</fullName>
+                <label>Work in Progress</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

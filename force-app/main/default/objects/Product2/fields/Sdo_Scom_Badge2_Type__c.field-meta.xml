@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sdo_Scom_Badge2_Type__c</fullName>
+    <label>Badge2_Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Free Shipping Badge</fullName>
+                <label>Free Shipping Badge</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Generic Badge</fullName>
+                <label>Generic Badge</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Price Discount Badge</fullName>
+                <label>Price Discount Badge</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Product Quantity Badge</fullName>
+                <label>Product Quantity Badge</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

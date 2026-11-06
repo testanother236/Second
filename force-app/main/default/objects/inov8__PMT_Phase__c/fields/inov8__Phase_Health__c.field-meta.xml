@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>inov8__Phase_Health__c</fullName>
+    <label>Phase Health</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>At Risk</fullName>
+                <label>At Risk</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed, not Completed</fullName>
+                <label>Closed, not Completed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Completed</fullName>
+                <label>Completed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Late</fullName>
+                <label>Late</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Not Started</fullName>
+                <label>Not Started</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>On Hold</fullName>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>On Track</fullName>
+                <label>On Track</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

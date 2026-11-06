@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>FSL__Request_Type__c</fullName>
+    <label>Request Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Appointment Booking</fullName>
+                <label>Appointment Booking</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dispatch</fullName>
+                <label>Dispatch</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Get Candidates</fullName>
+                <label>Get Candidates</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Schedule</fullName>
+                <label>Schedule</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>UnSchedule</fullName>
+                <label>UnSchedule</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
