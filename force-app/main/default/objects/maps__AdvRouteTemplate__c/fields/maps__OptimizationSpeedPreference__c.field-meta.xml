@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>Allows for faster optimization speeds to maintain in-field productivity.</description>
+    <fullName>maps__OptimizationSpeedPreference__c</fullName>
+    <label>Optimization Speed Preference</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <default>false</default>
+                <fullName>15</fullName>
+                <label>15</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>30</fullName>
+                <label>30</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>45</fullName>
+                <label>45</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>5</fullName>
+                <label>5</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>60</fullName>
+                <label>60</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

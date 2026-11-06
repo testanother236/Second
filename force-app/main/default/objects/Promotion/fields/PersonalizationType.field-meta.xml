@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PersonalizationType</fullName>
+    <inlineHelpText>Select the personalization engine for the promotion. Choose Individual Personalization to source per-member target values from Salesforce, or Bring Your Own Model to receive targets from an external system.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

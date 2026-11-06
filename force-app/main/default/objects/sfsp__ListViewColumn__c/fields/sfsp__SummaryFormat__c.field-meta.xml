@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>sfsp__SummaryFormat__c</fullName>
+    <label>Summary Format</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Average</fullName>
+                <label>Average</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Max</fullName>
+                <label>Max</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Median</fullName>
+                <label>Median</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Min</fullName>
+                <label>Min</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>PercentOfFocus</fullName>
+                <label>PercentOfFocus</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Sum</fullName>
+                <label>Sum</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

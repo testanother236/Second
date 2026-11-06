@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>FSL__User_Type__c</fullName>
+    <label>User Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Admin</fullName>
+                <label>Admin</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Agent</fullName>
+                <label>Agent</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Community</fullName>
+                <label>Community</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dispatcher</fullName>
+                <label>Dispatcher</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mobile</fullName>
+                <isActive>false</isActive>
+                <label>Mobile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Resource</fullName>
+                <label>Resource</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

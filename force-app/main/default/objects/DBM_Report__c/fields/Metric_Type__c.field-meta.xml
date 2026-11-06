@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metric_Type__c</fullName>
+    <label>Metric Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Currency</fullName>
+                <label>Currency</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Number</fullName>
+                <label>Number</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Percent</fullName>
+                <label>Percent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

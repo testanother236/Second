@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Shipping Type for a cart item</description>
+    <fullName>Shipping_Type__c</fullName>
+    <label>Shipping_Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Ship To Me</fullName>
+                <label>Ship To Me</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Store PickUp</fullName>
+                <label>Store PickUp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

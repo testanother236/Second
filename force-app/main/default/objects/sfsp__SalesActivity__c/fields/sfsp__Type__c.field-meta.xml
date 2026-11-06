@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>sfsp__Type__c</fullName>
+    <label>Sales Activity Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Allocation</fullName>
+                <label>Allocation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>ApprovalProcess</fullName>
+                <label>Approval Process</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Assignment</fullName>
+                <label>Assignment</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Hierarchy</fullName>
+                <label>Hierarchy</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Management</fullName>
+                <label>Management</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Status</fullName>
+                <label>Status</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

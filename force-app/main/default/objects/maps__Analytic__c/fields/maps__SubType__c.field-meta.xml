@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>maps__SubType__c</fullName>
+    <label>Sub Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>ArcGIS Online</fullName>
+                <label>ArcGIS Online</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Data Layer</fullName>
+                <label>Data Layer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Favorite Location</fullName>
+                <label>Favorite Location</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Marker Layer</fullName>
+                <label>Marker Layer</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Shape Layer</fullName>
+                <label>Shape Layer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>This is the date that the automatic optimization will start reoptimizing on.</description>
+    <fullName>maps__AutomaticOpStartsOn__c</fullName>
+    <label>Automatic Op Starts On</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

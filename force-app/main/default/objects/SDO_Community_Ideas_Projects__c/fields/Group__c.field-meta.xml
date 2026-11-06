@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group__c</fullName>
+    <inlineHelpText>What group is most directly responsible for this project?</inlineHelpText>
+    <label>Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Department__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Applications</fullName>
+                <label>Applications</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Apps</fullName>
+                <label>Apps</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Corporate Sales</fullName>
+                <label>Corporate Sales</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Demand Generation</fullName>
+                <label>Demand Generation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Employee Services</fullName>
+                <label>Employee Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Enterprise Sales</fullName>
+                <label>Enterprise Sales</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Events</fullName>
+                <label>Events</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Global</fullName>
+                <label>Global</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Hardware</fullName>
+                <label>Hardware</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Implementation Services</fullName>
+                <label>Implementation Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Interactive</fullName>
+                <label>Interactive</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>London</fullName>
+                <label>London</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>New York</fullName>
+                <label>New York</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Platform</fullName>
+                <label>Platform</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Premiere Support</fullName>
+                <label>Premiere Support</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Recruiting</fullName>
+                <label>Recruiting</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>San Francisco</fullName>
+                <label>San Francisco</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Standard Support</fullName>
+                <label>Standard Support</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sydney</fullName>
+                <label>Sydney</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Tokyo</fullName>
+                <label>Tokyo</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Toronto</fullName>
+                <label>Toronto</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Interactive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Demand Generation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Events</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Apps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Corporate Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales</controllingFieldValue>
+            <valueName>Enterprise Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Support</controllingFieldValue>
+            <valueName>Premiere Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Support</controllingFieldValue>
+            <valueName>Standard Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employee Services (HR)</controllingFieldValue>
+            <valueName>Recruiting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Employee Services (HR)</controllingFieldValue>
+            <valueName>Employee Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Real Estate</controllingFieldValue>
+            <valueName>San Francisco</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Real Estate</controllingFieldValue>
+            <valueName>Toronto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Real Estate</controllingFieldValue>
+            <valueName>New York</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Real Estate</controllingFieldValue>
+            <valueName>London</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Real Estate</controllingFieldValue>
+            <valueName>Tokyo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Real Estate</controllingFieldValue>
+            <valueName>Sydney</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Facilities &amp; Real Estate</controllingFieldValue>
+            <valueName>Global</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Information Technology (IT)</controllingFieldValue>
+            <valueName>Applications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Information Technology (IT)</controllingFieldValue>
+            <valueName>Hardware</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

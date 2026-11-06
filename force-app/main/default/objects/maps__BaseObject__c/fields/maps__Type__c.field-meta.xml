@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>maps__Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Geofence</fullName>
+                <label>Geofence</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Live</fullName>
+                <label>Live</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Marker</fullName>
+                <label>Marker</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

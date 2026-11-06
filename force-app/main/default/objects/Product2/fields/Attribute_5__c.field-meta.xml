@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attribute_5__c</fullName>
+    <label>Service</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Installation Services</fullName>
+                <label>Installation Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Protection Plans</fullName>
+                <label>Protection Plans</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Tech Support</fullName>
+                <label>Tech Support</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

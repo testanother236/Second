@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>What: What is the timeframe for the decision.</description>
+    <fullName>SDO_Sales_Decision_Timeframe__c</fullName>
+    <label>Decision Timeframe</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>1-3 Months</fullName>
+                <label>1-3 Months</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>3-6 Months</fullName>
+                <label>3-6 Months</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>6-12 Months</fullName>
+                <label>6-12 Months</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Immediately</fullName>
+                <label>Immediately</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Next Year</fullName>
+                <label>Next Year</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

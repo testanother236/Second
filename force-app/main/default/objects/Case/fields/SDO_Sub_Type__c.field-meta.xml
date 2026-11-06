@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>What: Used in KCS Flows</description>
+    <fullName>SDO_Sub_Type__c</fullName>
+    <label>Sub-Type</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Billing</fullName>
+                <label>Billing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Complaint</fullName>
+                <label>Complaint</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Order or Invoice</fullName>
+                <label>Order or Invoice</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Profile</fullName>
+                <label>Profile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Setup and Usage</fullName>
+                <label>Setup and Usage</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Suggestion</fullName>
+                <label>Suggestion</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Troubleshooting</fullName>
+                <label>Troubleshooting</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Product Support</controllingFieldValue>
+            <valueName>Setup and Usage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Support</controllingFieldValue>
+            <valueName>Troubleshooting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Support</controllingFieldValue>
+            <controllingFieldValue>Account Support</controllingFieldValue>
+            <controllingFieldValue>General</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Support</controllingFieldValue>
+            <controllingFieldValue>Account Support</controllingFieldValue>
+            <controllingFieldValue>General</controllingFieldValue>
+            <valueName>Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Support</controllingFieldValue>
+            <valueName>Profile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account Support</controllingFieldValue>
+            <valueName>Order or Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General</controllingFieldValue>
+            <valueName>Suggestion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General</controllingFieldValue>
+            <valueName>Complaint</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>A Field Service Starter Kit package field: 
+When an admin creates or updates user records, the SFS Resource Type field on the user object allows the admin to assign permission sets to the user and determine whether a Service Resource record should be created and associated to the user as well.</description>
+    <fullName>FSSK__FSK_FSL_Resource_Type__c</fullName>
+    <inlineHelpText>A Field Service Starter Kit package field: 
+When an admin creates or updates user records, the SFS Resource Type field on the user object allows the admin to assign permission sets to the user and determine whether a Service Resource record should be created and associated to the user as well.</inlineHelpText>
+    <label>SFS Resource Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Community</fullName>
+                <label>Contractor Dispatcher (Community Dispatcher)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Dispatcher</fullName>
+                <label>Dispatcher</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Resource</fullName>
+                <label>Resource (Without Mobile)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Resource_Dispatcher</fullName>
+                <label>Resource &amp; Dispatcher (Without Mobile)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Resource_Dispatcher_Mobile</fullName>
+                <label>Resource &amp; Dispatcher (With Mobile)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Resource_Mobile</fullName>
+                <label>Resource (With Mobile)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
