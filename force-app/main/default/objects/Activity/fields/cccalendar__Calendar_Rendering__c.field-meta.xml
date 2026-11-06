@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultValue>&quot;Normal&quot;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Mode to render event with on Calendar: The rendering type of this event. Can be empty (normal rendering), &quot;background&quot;, or &quot;inverse-background&quot;</description>
+    <fullName>cccalendar__Calendar_Rendering__c</fullName>
+    <inlineHelpText>Mode to render event with on Calendar: The rendering type of this event. Can be empty (normal rendering), &quot;background&quot;, or &quot;inverse-background&quot;</inlineHelpText>
+    <label>Calendar Rendering</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Background</fullName>
+                <label>Background</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Inverse-Background</fullName>
+                <label>Inverse-Background</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Normal</fullName>
+                <label>Normal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

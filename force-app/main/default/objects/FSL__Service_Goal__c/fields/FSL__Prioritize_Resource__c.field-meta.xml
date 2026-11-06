@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>FSL__Prioritize_Resource__c</fullName>
+    <label>Prioritize Resource</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>true</default>
+                <fullName>Least Qualified</fullName>
+                <label>Least Qualified</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Most Qualified</fullName>
+                <label>Most Qualified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>maps__LengthUnits__c</fullName>
+    <label>Length Units</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Feet</fullName>
+                <label>Feet</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>meters</fullName>
+                <label>meters</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

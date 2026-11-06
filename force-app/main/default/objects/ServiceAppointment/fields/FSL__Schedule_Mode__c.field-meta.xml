@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>FSL__Schedule_Mode__c</fullName>
+    <label>Schedule Mode</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Automatic</fullName>
+                <label>Automatic</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Drag and Drop</fullName>
+                <label>Drag and Drop</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Global Optimization</fullName>
+                <label>Global Optimization</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>In Day Optimization</fullName>
+                <label>In Day Optimization</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Manual</fullName>
+                <label>Manual</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>None</fullName>
+                <label>None</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Optimization</fullName>
+                <label>Optimization</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Resource Optimization</fullName>
+                <label>Resource Optimization</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Schedule</fullName>
+                <label>Schedule</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

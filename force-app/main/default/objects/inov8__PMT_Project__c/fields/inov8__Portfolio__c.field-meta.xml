@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessStatus>Active</businessStatus>
+    <deprecated>false</deprecated>
+    <fullName>inov8__Portfolio__c</fullName>
+    <label>Portfolio</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>F&amp;S</fullName>
+                <label>F&amp;S</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>New Entity</fullName>
+                <label>New Entity</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>P2P</fullName>
+                <label>P2P</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Q2O</fullName>
+                <label>Q2O</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>R2R</fullName>
+                <label>R2R</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

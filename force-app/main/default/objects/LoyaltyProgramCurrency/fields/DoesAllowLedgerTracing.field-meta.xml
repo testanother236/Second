@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoesAllowLedgerTracing</fullName>
+    <inlineHelpText>For currencies with the fixed duration expiration model, you can use ledger tracing only when Point Tracing for Fixed Duration Currencies in Loyalty Management Settings is turned on.
+            For currencies with the activity-based expiration model, you can use ledger tracing only when Asynchronous Point Tracing for Activity-Based Currencies in Loyalty Management Settings is turned on.</inlineHelpText>
+</CustomField>

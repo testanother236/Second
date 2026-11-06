@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDO_MAPS_How_Did_It_Go__c</fullName>
+    <label>How Did It Go?</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Fair</fullName>
+                <label>Fair</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Good</fullName>
+                <label>Good</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Great</fullName>
+                <label>Great</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Horrible</fullName>
+                <label>Horrible</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Poor</fullName>
+                <label>Poor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

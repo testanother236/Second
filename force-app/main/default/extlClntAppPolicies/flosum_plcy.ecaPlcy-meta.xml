@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtlClntAppConfigurablePolicies xmlns="http://soap.sforce.com/2006/04/metadata">
+    <externalClientApplication>flosum</externalClientApplication>
+    <isEnabled>true</isEnabled>
+    <isOauthPluginEnabled>true</isOauthPluginEnabled>
+    <label>flosum_plcy</label>
+    <startPage>None</startPage>
+</ExtlClntAppConfigurablePolicies>

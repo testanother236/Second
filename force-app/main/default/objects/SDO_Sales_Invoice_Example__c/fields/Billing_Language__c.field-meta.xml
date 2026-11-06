@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Language__c</fullName>
+    <label>Billing Language</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Chinese - Traditional</fullName>
+                <label>Chinese - Traditional</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>English</fullName>
+                <label>English</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>French</fullName>
+                <label>French</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Japanese</fullName>
+                <label>Japanese</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Spanish</fullName>
+                <label>Spanish</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

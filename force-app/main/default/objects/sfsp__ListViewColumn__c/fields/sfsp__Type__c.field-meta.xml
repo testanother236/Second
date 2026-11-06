@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>sfsp__Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Allocation Metric</fullName>
+                <label>Allocation Metric</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Assignment Object</fullName>
+                <label>Assignment Object</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Reference Field</fullName>
+                <label>Reference Field</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultValue>&apos;4&apos;</defaultValue>
+    <deprecated>false</deprecated>
+    <description>This tells Maps Advanced Route how strict to account for the priorities during routing.  1 is least strict and 7 is most strict.</description>
+    <fullName>maps__PrioritizationStrictness__c</fullName>
+    <label>Prioritization Strictness</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>1</fullName>
+                <label>1</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>2</fullName>
+                <label>2</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>3</fullName>
+                <label>3</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>4</fullName>
+                <label>4</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>5</fullName>
+                <label>5</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>6</fullName>
+                <label>6</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>7</fullName>
+                <label>7</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

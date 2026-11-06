@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Success_Measure__c</fullName>
+    <label>Success Measure</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Brand Recognition</fullName>
+                <label>Brand Recognition</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Customer Satisfaction</fullName>
+                <label>Customer Satisfaction</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Growth</fullName>
+                <label>Growth</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Product Knowledge</fullName>
+                <label>Product Knowledge</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Revenue</fullName>
+                <label>Revenue</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Trained Employees</fullName>
+                <label>Trained Employees</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

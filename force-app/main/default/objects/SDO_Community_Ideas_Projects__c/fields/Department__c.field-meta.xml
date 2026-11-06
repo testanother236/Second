@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Department__c</fullName>
+    <inlineHelpText>What department is responsible for this project?</inlineHelpText>
+    <label>Department</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Business Development &amp; Alliances</fullName>
+                <label>Business Development &amp; Alliances</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Customer Support</fullName>
+                <label>Customer Support</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Employee Services (HR)</fullName>
+                <label>Employee Services (HR)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Facilities &amp; Real Estate</fullName>
+                <label>Facilities &amp; Real Estate</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Finance</fullName>
+                <label>Finance</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Foundation</fullName>
+                <label>Foundation</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Global Services</fullName>
+                <label>Global Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Information Technology (IT)</fullName>
+                <label>Information Technology (IT)</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Internal Salesforce App</fullName>
+                <label>Internal Salesforce App</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Legal</fullName>
+                <label>Legal</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Marketing</fullName>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Product Management</fullName>
+                <label>Product Management</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Research &amp; Development</fullName>
+                <label>Research &amp; Development</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Sales</fullName>
+                <label>Sales</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Security</fullName>
+                <label>Security</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

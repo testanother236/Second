@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessStatus>Active</businessStatus>
+    <description>Exit stage for the job&apos;s Tracking Event records that are successfully processed</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <fullName>Exit_Stage__c</fullName>
+    <inlineHelpText>Exit stage for the job&apos;s Tracking Event records that are successfully processed</inlineHelpText>
+    <label>Exit Stage</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>true</default>
+                <fullName>Mixpanel Event</fullName>
+                <label>Mixpanel Event</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mixpanel Profile</fullName>
+                <label>Mixpanel Profile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Processed</fullName>
+                <label>Processed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

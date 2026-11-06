@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>maps__DistanceUnits__c</fullName>
+    <label>Distance Units</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>feet</fullName>
+                <label>feet</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>kilometers</fullName>
+                <label>kilometers</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>meters</fullName>
+                <label>meters</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>miles</fullName>
+                <label>miles</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

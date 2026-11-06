@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>These are the bulk processing statuses</description>
+    <fullName>maps__CurrentProcessingStatusBulk__c</fullName>
+    <label>Current Processing Status Bulk</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>true</default>
+                <fullName>Available For Submission</fullName>
+                <label>Available For Submission</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Building Route Request</fullName>
+                <label>Building Route Request</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Building Route Request Needs Processing</fullName>
+                <label>Building Route Request Needs Processing</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Next Working Day Not Submitted</fullName>
+                <label>Next Working Day Not Submitted</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Next Working Day Submitted</fullName>
+                <label>Next Working Day Submitted</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Routing Poll Submitted</fullName>
+                <label>Routing Poll Submitted</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

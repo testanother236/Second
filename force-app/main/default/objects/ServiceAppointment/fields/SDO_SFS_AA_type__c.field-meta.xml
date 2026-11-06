@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>used for AA LWC work around</description>
+    <fullName>SDO_SFS_AA_type__c</fullName>
+    <label>SDO SFS AA type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>EnRoute</fullName>
+                <label>EnRoute</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>LastMile</fullName>
+                <label>LastMile</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>None</fullName>
+                <label>None</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

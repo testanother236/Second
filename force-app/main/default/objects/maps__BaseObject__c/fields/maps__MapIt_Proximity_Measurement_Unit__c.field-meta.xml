@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>maps__MapIt_Proximity_Measurement_Unit__c</fullName>
+    <label>MapIt Proximity Measurement Unit</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Feet</fullName>
+                <label>Feet</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Kilometers</fullName>
+                <label>Kilometers</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Meters</fullName>
+                <label>Meters</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Miles</fullName>
+                <label>Miles</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Yards</fullName>
+                <label>Yards</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

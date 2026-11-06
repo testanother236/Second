@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>maps__Type__c</fullName>
+    <label>Type of History Record</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Optimization</fullName>
+                <label>Optimization</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Snapshot</fullName>
+                <label>Snapshot</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Territory Modification</fullName>
+                <label>Territory Modification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

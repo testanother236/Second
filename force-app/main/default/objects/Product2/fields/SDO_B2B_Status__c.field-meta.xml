@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SDO_B2B_Status__c</fullName>
+    <label>Commerce Product Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Approved</fullName>
+                <label>Approved</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>In Review</fullName>
+                <label>In Review</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Published to Website</fullName>
+                <label>Published to Website</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>et4ae5__Test_Type__c</fullName>
+    <label>Test Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Content areas</fullName>
+                <label>Content areas</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Emails</fullName>
+                <label>Emails</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>From names</fullName>
+                <label>From names</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Preheaders</fullName>
+                <label>Preheaders</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Send dates/times</fullName>
+                <label>Send dates/times</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Subject lines</fullName>
+                <label>Subject lines</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

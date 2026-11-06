@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deleteConstraint>SetNull</deleteConstraint>
+    <fullName>Requester__c</fullName>
+    <label>Requester</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Commerce_Approval_Requests</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

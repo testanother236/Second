@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>inov8__Processes_Impacted__c</fullName>
+    <label>Process(es) Impacted</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Accruals</fullName>
+                <label>Accruals</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Cash</fullName>
+                <label>Cash</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Commissions</fullName>
+                <label>Commissions</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Comp &amp; Ben</fullName>
+                <label>Comp &amp; Ben</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Fixed Assets</fullName>
+                <label>Fixed Assets</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Inter-Co</fullName>
+                <label>Inter-Co</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Prepaids</fullName>
+                <label>Prepaids</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Revenue</fullName>
+                <label>Revenue</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>T&amp;E</fullName>
+                <label>T&amp;E</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
