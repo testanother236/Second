@@ -1,0 +1,6 @@
+Dear {!Contact.FirstName},
+
+This is auto-generated email template #999.
+
+Best regards,
+{!User.FirstName}
