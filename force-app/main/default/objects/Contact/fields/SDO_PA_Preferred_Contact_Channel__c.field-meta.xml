@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>What: The preferred contact method for this contact</description>
+    <fullName>SDO_PA_Preferred_Contact_Channel__c</fullName>
+    <label>Preferred Contact Channel</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Email</fullName>
+                <label>Email</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Facebook Messenger</fullName>
+                <label>Facebook Messenger</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Home Phone</fullName>
+                <label>Home Phone</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mobile Phone</fullName>
+                <label>Mobile Phone</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>SMS</fullName>
+                <label>SMS</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>WhatsApp</fullName>
+                <label>WhatsApp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

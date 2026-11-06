@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>datamask__Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Error</fullName>
+                <label>Error</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Execution Completion</fullName>
+                <label>Execution Completion</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Execution Start</fullName>
+                <label>Execution Start</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Object Processing Completion</fullName>
+                <label>Object Processing Completion</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Object Start</fullName>
+                <label>Object Start</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Post-Processing Completion</fullName>
+                <label>Post-Processing Completion</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pre-Processing Completion</fullName>
+                <label>Pre-Processing Completion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>What: Used for Partner Certification Information</description>
+    <fullName>SDO_Partner_Certification__c</fullName>
+    <label>Partner Certification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Certified Partner</fullName>
+                <label>Certified Partner</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Elite Partner</fullName>
+                <label>Elite Partner</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

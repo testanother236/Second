@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>engage_reports__Type__c</fullName>
+    <label>Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Engage Campaigns</fullName>
+                <label>Engage Campaigns</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Engage for Gmail</fullName>
+                <label>Engage for Gmail</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Engage for Outlook</fullName>
+                <label>Engage for Outlook</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

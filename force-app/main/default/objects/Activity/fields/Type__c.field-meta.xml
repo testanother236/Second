@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This custom field is required to expose the Activity Type field to reporting.  It is updated automatically by a trigger called &quot;qbranch_activity_type_update&quot;.</description>
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>true</default>
+                <fullName>Call</fullName>
+                <label>Call</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Email</fullName>
+                <label>Email</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Meeting</fullName>
+                <label>Meeting</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Prep</fullName>
+                <label>Prep</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

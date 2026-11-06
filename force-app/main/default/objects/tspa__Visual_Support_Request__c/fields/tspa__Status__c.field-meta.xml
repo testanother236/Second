@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>tspa__Status__c</fullName>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Canceled</fullName>
+                <label>Canceled</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Closed</fullName>
+                <label>Closed</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Declined</fullName>
+                <label>Declined</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>In Progress</fullName>
+                <label>In Progress</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>New</fullName>
+                <label>New</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pending</fullName>
+                <label>Pending</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

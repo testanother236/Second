@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>End Chat</fullName>
+                <label>End Chat</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Flag</fullName>
+                <label>Flag</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Left Chat</fullName>
+                <label>Left Chat</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Participant Change</fullName>
+                <label>Participant Change</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Speech</fullName>
+                <label>Speech</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

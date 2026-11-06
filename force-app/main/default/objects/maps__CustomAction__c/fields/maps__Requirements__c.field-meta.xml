@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>maps__Requirements__c</fullName>
+    <label>Requirements</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Activity Support</fullName>
+                <label>Activity Support</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Contact Or Lead</fullName>
+                <label>Contact Or Lead</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Verified Location Support</fullName>
+                <label>Verified Location Support</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

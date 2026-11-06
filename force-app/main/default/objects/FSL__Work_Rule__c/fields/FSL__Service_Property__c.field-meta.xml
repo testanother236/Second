@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>FSL__Service_Property__c</fullName>
+    <label>Service Property</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>ArrivalWindowEndTime</fullName>
+                <label>ArrivalWindowEndTime</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>ArrivalWindowStartTime</fullName>
+                <label>ArrivalWindowStartTime</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>SchedEndTime</fullName>
+                <label>SchedEndTime</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>SchedStartTime</fullName>
+                <label>SchedStartTime</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>ServiceTerritory</fullName>
+                <label>ServiceTerritory</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

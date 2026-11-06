@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <businessStatus>Active</businessStatus>
+    <description>Entry criteria for the job&apos;s Tracking Event records to be processed</description>
+    <fieldManageability>SubscriberControlled</fieldManageability>
+    <fullName>Entry_Stage__c</fullName>
+    <inlineHelpText>Entry criteria for the job&apos;s Tracking Event records to be processed</inlineHelpText>
+    <label>Entry Stage</label>
+    <required>true</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Mixpanel Event</fullName>
+                <label>Mixpanel Event</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Mixpanel Profile</fullName>
+                <label>Mixpanel Profile</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>New</fullName>
+                <label>New</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Processed</fullName>
+                <label>Processed</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partnership_Status__c</fullName>
+    <label>Partnership Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Active</fullName>
+                <label>Active</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Inactive</fullName>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Onboarding</fullName>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Pending</fullName>
+                <label>Pending</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Suspended</fullName>
+                <label>Suspended</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

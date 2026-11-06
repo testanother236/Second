@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>maps__WeightUnits__c</fullName>
+    <label>Weight Units</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>kilos</fullName>
+                <label>kilos</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>pounds</fullName>
+                <label>pounds</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>tons</fullName>
+                <label>tons</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

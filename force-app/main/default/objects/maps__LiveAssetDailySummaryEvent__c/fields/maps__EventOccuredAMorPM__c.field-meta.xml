@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <description>AM/PM is determined based on the Timezone of the device.</description>
+    <fullName>maps__EventOccuredAMorPM__c</fullName>
+    <inlineHelpText>AM/PM is determined based on the Timezone of the device.</inlineHelpText>
+    <label>Event Occurred in AM or PM</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>AM</fullName>
+                <label>AM</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>AM/PM</fullName>
+                <label>AM/PM</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>PM</fullName>
+                <label>PM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

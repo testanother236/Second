@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultValue>true</defaultValue>
+    <description>Indicates whether to show or hide this agent from the AI Agents demo component</description>
+    <fullName>Display_Agent__c</fullName>
+    <label>Display Agent</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Offer__c</fullName>
+    <label>Primary Offer</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Case Study</fullName>
+                <label>Case Study</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Contact Us Form</fullName>
+                <label>Contact Us Form</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Demo</fullName>
+                <label>Demo</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Free Trial</fullName>
+                <label>Free Trial</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Other</fullName>
+                <label>Other</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Webinar</fullName>
+                <label>Webinar</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Whitepaper</fullName>
+                <label>Whitepaper</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsEnrollmentRequired</fullName>
+    <inlineHelpText>Require members to enroll to participate in the promotion. If you select this option, enter the Enrollment Start Date.</inlineHelpText>
+    <trackHistory>false</trackHistory>
+</CustomField>

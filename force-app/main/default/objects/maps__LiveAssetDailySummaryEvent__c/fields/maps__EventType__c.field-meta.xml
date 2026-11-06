@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deprecated>false</deprecated>
+    <fullName>maps__EventType__c</fullName>
+    <inlineHelpText>Type of summary event represented by this record</inlineHelpText>
+    <label>Event Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Device Battery On</fullName>
+                <label>Device Battery On</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>First Message of Day</fullName>
+                <label>First Message of Day</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>First Motion</fullName>
+                <label>First Motion</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Hard Acceleration</fullName>
+                <label>Hard Acceleration</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Hard Braking</fullName>
+                <label>Hard Braking</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Last Message of Day</fullName>
+                <label>Last Message of Day</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Last Motion</fullName>
+                <label>Last Motion</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Live App Toggle Off</fullName>
+                <label>Live App Toggle Off</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Live App Toggle On</fullName>
+                <label>Live App Toggle On</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Speed Threshold</fullName>
+                <label>Speed Threshold</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Speeding</fullName>
+                <label>Speeding</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Stop</fullName>
+                <label>Stop</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

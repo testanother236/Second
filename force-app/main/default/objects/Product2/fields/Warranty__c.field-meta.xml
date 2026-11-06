@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Warranty__c</fullName>
+    <label>Warranty</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>1 Year</fullName>
+                <label>1 Year</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>2 Years</fullName>
+                <label>2 Years</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>3 Years</fullName>
+                <label>3 Years</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>4 Years</fullName>
+                <label>4 Years</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>5 Years</fullName>
+                <label>5 Years</label>
+            </value>
+            <value>
+                <default>true</default>
+                <fullName>Not Available</fullName>
+                <label>Not Available</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

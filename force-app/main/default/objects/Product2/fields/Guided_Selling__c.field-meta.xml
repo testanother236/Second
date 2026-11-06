@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Guided_Selling__c</fullName>
+    <inlineHelpText>Field used to filter products for Guided Selling.</inlineHelpText>
+    <label>Guided Selling</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <default>false</default>
+                <fullName>Batteries</fullName>
+                <label>Batteries</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Battery Tools</fullName>
+                <label>Battery Tools</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Kits</fullName>
+                <label>Kits</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Services</fullName>
+                <label>Services</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Software Licenses</fullName>
+                <label>Software Licenses</label>
+            </value>
+            <value>
+                <default>false</default>
+                <fullName>Turbines</fullName>
+                <label>Turbines</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
